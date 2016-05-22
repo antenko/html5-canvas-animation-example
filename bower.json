@@ -1,0 +1,27 @@
+{
+  "name": "html5-canvas-animation-example",
+  "homepage": "https://github.com/antenko/html5-canvas-animation-example",
+  "authors": [
+    "Antenko <ratenko.a@gmail.com>"
+  ],
+  "description": "A simple example of using a canvas with animation and user interaction",
+  "main": "",
+  "moduleType": [],
+  "keywords": [
+    "html5",
+    "canvas",
+    "javascript"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "jquery": "~2.2.4"
+  }
+}
