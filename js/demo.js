@@ -67,18 +67,18 @@
 		requestAnimationFrame(draw);
 	}
 
-	ctx.canvas.addEventListener('click', function (event) {
+	canvas.addEventListener('click', function (event) {
 		var x = event.pageX - canvasLeftOffset,
 			y = event.pageY - canvasTopOffset;
 		circles.push(new Circle({x: x, y: y, randomMotion: Math.random() > 0.5}));
 	});
 
-	ctx.canvas.addEventListener('mousemove', function (event) {
+	canvas.addEventListener('mousemove', function (event) {
 		mouse.x = event.pageX - canvasLeftOffset;
 		mouse.y = event.pageY - canvasTopOffset;
 	});
 
-	ctx.canvas.addEventListener('mouseout', function () {
+	canvas.addEventListener('mouseout', function () {
 		mouse.x = null;
 		mouse.y = null;
 	});
@@ -99,7 +99,7 @@
 		return {
 			x: getRandomMinusOrPlusUnit() * Math.round(Math.random() * 2),
 			y: getRandomMinusOrPlusUnit() * Math.round(Math.random() * 2)
-		}
+		};
 	}
 
 	for (var i = 0; i < 100; i++) {
